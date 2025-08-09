@@ -37,6 +37,16 @@ class HelperFunctions:
 
     @staticmethod
     def calculateL2Distance(point1: list, point2: list) -> float:
+        """
+        Calculate the L2 (Euclidean) distance between two points.
+        
+        Args:
+            - point1: list or array-like (first point coordinates)
+            - point2: list or array-like (second point coordinates)
+
+        Output:
+            - float: the L2 distance between the two points
+        """
         return math.dist(point1, point2)
 
     @staticmethod
