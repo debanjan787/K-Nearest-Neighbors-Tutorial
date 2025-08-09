@@ -346,8 +346,6 @@ Concept docs inside `docs/` are fully self-contained. For deeper dives:
 
 This project is distributed under the terms of the MIT License. See `LICENSE` for details.
 
----
-
 ## 🤝 Contributions
 
 Feel free to fork & open a pull request adding:
@@ -381,6 +379,8 @@ Suggested next steps for you:
 If you build upon this, consider documenting performance trade-offs and adding reproducible experiment scripts. Your future self (and contributors) will thank you.
 
 </div>
+
+---
 
 <div align="center">
 
