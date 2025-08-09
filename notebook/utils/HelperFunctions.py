@@ -51,6 +51,15 @@ class HelperFunctions:
 
     @staticmethod
     def getSortedFrequency(col: list) -> list:
+        """
+        Get the sorted frequency of elements in a list.
+
+        Args:
+            - col: list or array-like (input list)
+
+        Output:
+            - list: sorted list of unique elements by frequency
+        """
         return sorted(set(col), key=col.count, reverse=True)
     
     @staticmethod
