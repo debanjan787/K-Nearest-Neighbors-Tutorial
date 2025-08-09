@@ -64,6 +64,16 @@ class HelperFunctions:
     
     @staticmethod
     def predictionClassification(df: pd.DataFrame, feature: str) -> str:
+        """
+        Predict the class label for a given feature using the most frequent value.
+
+        Args:
+            - df: pandas DataFrame (input data)
+            - feature: str (feature column name)
+
+        Output:
+            - str: the predicted class label
+        """
         col = df[feature].tolist()
         frequency = HelperFunctions.getSortedFrequency(col)
         return frequency[0]
