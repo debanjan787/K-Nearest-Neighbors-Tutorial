@@ -80,6 +80,18 @@ class HelperFunctions:
     
     @staticmethod
     def predictionRegression(df: pd.DataFrame, target: str, distance: str, weight: str = False) -> float:
+        """
+        Predict the target value for a given distance using the mean or weighted mean.
+
+        Args:
+            - df: pandas DataFrame (input data)
+            - target: str (target column name)
+            - distance: str (distance column name)
+            - weight: bool (whether to use weighted mean)
+
+        Output:
+            - float: the predicted target value
+        """
         if not weight:
             return df[target].mean()
         
